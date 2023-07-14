@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_pagos"
+            app:destination="@id/navigation_pagos"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_documentacion"
+            app:destination="@id/navigation_documentacion"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_cuenta"
+            app:destination="@id/navigation_cuenta"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_notificaciones"
+            app:destination="@id/navigation_notificaciones"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_preguntasfc"
+            app:destination="@id/navigation_preguntasfc"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_pagos"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.pagos.PagosFragment"
+        android:label="@string/title_pagos"
+        tools:layout="@layout/fragment_pagos" />
+
+    <fragment
+        android:id="@+id/navigation_cuenta"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.cuenta.CuentaFragment"
+        android:label="@string/title_informacion"
+        tools:layout="@layout/fragment_cuenta"/>
+
+    <fragment
+        android:id="@+id/navigation_documentacion"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.documentacion.DocumentacionFragment"
+        android:label="@string/title_documentacion"
+        tools:layout="@layout/fragment_documentacion"/>
+
+    <fragment
+        android:id="@+id/navigation_notificaciones"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.notificaciones.NotificacionesFragment"
+        android:label="@string/title_notificaciones"
+        tools:layout="@layout/fragment_notificaciones"/>
+    <fragment
+        android:id="@+id/navigation_preguntasfc"
+        android:name="com.gesticondv.fisi_2023_1_triburock_enanitosverdes_fe.ui.preguntasfc.PreguntasfcFragment"
+        android:label="@string/title_preguntasfc"
+        tools:layout="@layout/fragment_preguntasfc"/>
+
+</navigation>
